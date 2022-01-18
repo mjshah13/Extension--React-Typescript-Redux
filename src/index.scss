@@ -1,0 +1,123 @@
+// Colors
+$white: #ffffff;
+$grey: #F5F5F5;
+$maroon: #ee405e;
+$black: #000000;
+$primary: #1775f9;
+$primaryLight: #b2b2b2;
+$success: #31c451;
+$danger: #ff333a;
+$warning: #f5c84c;
+$lightGrey: #E5E5E5;
+$pink: #e1193b;
+$input_field_grey: #e8e8e8;
+$place_holder: #828282;
+$purple:#885FFF;
+$dark:#414047;
+
+// font family
+@font-face {
+  font-family: Manrope-Bold;
+  src: url('../src/Fonts/Manrope-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: Manrope-ExtraBold;
+  src: url('../src/Fonts/Manrope-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: Manrope-SemiBold;
+  src: url('../src/Fonts/Manrope-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: Manrope;
+  src: url('../src/Fonts/Manrope-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: Manrope-Light;
+  src: url('../src/Fonts/Manrope-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: Manrope-ExtraLight;
+  src: url('../src/Fonts/Manrope-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: Manrope-Medium;
+  src: url('../src/Fonts/Manrope-Medium.ttf') format('truetype');
+}
+
+// Universal styling
+body {
+  font-family: Inter-Regular;
+  color: black;
+  background-color: $white !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: 0.35s;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  /* border-radius: 10px; */
+  // max-height: 30%;
+  // height: 30%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ee405d59;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $maroon;
+}
+
+@mixin media($breakpoint) {
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 1025px) {
+      @content;
+    }
+  }
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 800px) {
+      @content;
+    }
+  }
+  @if $breakpoint == land {
+    @media only screen and (max-width: 1450px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 1799px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-large {
+    @media only screen and (min-width: 1800px) {
+      @content;
+    }
+  }
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  width: 22px !important;
+  height: 22px !important;
+}
