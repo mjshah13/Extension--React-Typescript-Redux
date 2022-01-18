@@ -5,6 +5,7 @@ import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import store from "./Redux/store";
+import 'antd/dist/antd.css';
 
 ReactDOM.render(
   <React.StrictMode>

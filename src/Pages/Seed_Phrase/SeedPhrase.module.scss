@@ -1,0 +1,48 @@
+@import '../../index.scss';
+.main_container {
+  .top_sec {
+    padding: 0.5rem 1.8rem;
+    p {
+      padding-top: 0.8rem;
+      font-size: 14px;
+      font-family: Manrope;
+      color: $place_holder;
+    }
+    .seed_phrase {
+      h2 {
+        font-size: 18px;
+        font-family: Manrope-SemiBold;
+        color: $seed_phrase_title;
+        text-align: center;
+      }
+      .phrases {
+        border: 2px solid $input_border_inactive;
+        background-color: rgba(243, 243, 243, 0.37);
+        border-radius: 10px;
+        padding: 1rem;
+        .row {
+          justify-content: center;
+          .gap {
+            padding: 0.3rem;
+          }
+        }
+      }
+      .copy_seed {
+        margin-top: 1.2rem;
+        display: flex;
+        justify-content: center;
+        a {
+          font-size: 18.5px;
+          font-family: Manrope-SemiBold;
+          color: $purple;
+          img {
+            margin-right: 0.4rem;
+          }
+        }
+      }
+    }
+    .btn {
+      margin-top: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import '../../index.scss';
+.main_container {
+  .top_section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.6rem 2rem;
+    margin-top: 1rem;
+    h4 {
+      font-family: Manrope;
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 0rem;
+    }
+    h2 {
+      margin-top: 0.2rem;
+      color: $primary;
+      font-family: Manrope-Light;
+      font-size: 18px;
+    }
+  }
+  .input_code {
+    p {
+      font-family: Manrope-Light;
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 0.4rem;
+      color: $place_holder;
+    }
+    .otp {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+      input {
+        border: 1px solid $input_border_inactive;
+        border-radius: 8px;
+        width: 40px !important;
+        height: 40px !important;
+        background-color: rgba(235, 233, 233, 0.507);
+      }
+      input:last-child {
+        margin-right: 0rem !important;
+      }
+      input:focus {
+        outline: 2px solid $purple !important;
+      }
+    }
+  }
+  .btn {
+    margin-top: 1.5rem;
+  }
+  .hr {
+    width: 85%;
+    color: $place_holder;
+    margin-top: 1.8rem;
+  }
+  .heading {
+    text-align: center;
+    margin-top: 1.2rem;
+    h2 {
+      font-family: Manrope-Light;
+      font-size: 16px;
+    }
+    p {
+      font-family: Manrope;
+      font-size: 16px;
+      color: $primary;
+      margin-top: 1.2rem;
+    }
+    a {
+      font-family: Manrope;
+      font-size: 16px;
+      color: $primary;
+    }
+  }
+}

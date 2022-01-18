@@ -1,0 +1,54 @@
+@import '../../index.scss';
+
+.btn_container {
+  display: flex;
+  justify-content: center;
+  .default {
+    border: 1px solid $input_border_inactive;
+  }
+  button {
+    background-color: transparent;
+    margin: 1.5rem 0.2rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Manrope;
+    border: none;
+  }
+  :focus {
+    border: 1px solid $input_border_inactive;
+  }
+}
+.btn {
+  margin-top: 1.5rem;
+}
+.terms {
+  margin-top: 1rem;
+  font-family: Manrope;
+  text-align: center;
+  padding: 0.7rem 1.8rem;
+  p {
+    font-size: 13.5px;
+    color: $place_holder;
+    a {
+      cursor: pointer;
+    }
+  }
+}
+.hr {
+  width: 85%;
+  color: $place_holder;
+  margin-top: 1rem;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  h2 {
+    font-family: Manrope;
+    font-size: 16px;
+  }
+}
+.btn_near {
+  margin-top: 0.5rem;
+}

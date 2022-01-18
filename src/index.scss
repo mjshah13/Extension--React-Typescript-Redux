@@ -1,20 +1,25 @@
 // Colors
 $white: #ffffff;
-$grey: #F5F5F5;
+$grey: #f5f5f5;
 $maroon: #ee405e;
 $black: #000000;
-$primary: #1775f9;
+$primary: #587be0;
 $primaryLight: #b2b2b2;
 $success: #31c451;
 $danger: #ff333a;
 $warning: #f5c84c;
-$lightGrey: #E5E5E5;
+$lightGrey: #e5e5e5;
 $pink: #e1193b;
 $input_field_grey: #e8e8e8;
 $place_holder: #828282;
-$purple:#885FFF;
-$dark:#414047;
-
+$purple: #885fff;
+$dark: #414047;
+$input_border_inactive: #bebec2;
+$input_bg: #fcfcfc;
+$input_label: #6f6e73;
+$contract_title: #414047;
+$category_title: #33373bb2;
+$seed_phrase_title: #0f2035;
 // font family
 @font-face {
   font-family: Manrope-Bold;
@@ -50,6 +55,7 @@ body {
   font-family: Inter-Regular;
   color: black;
   background-color: $white !important;
+  margin: 0rem !important;
 }
 html {
   scroll-behavior: smooth;

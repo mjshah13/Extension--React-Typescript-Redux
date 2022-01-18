@@ -1,0 +1,41 @@
+@import '../../index.scss';
+.main_container {
+  .top_sec {
+    padding: 0.5rem 1.8rem;
+    p {
+      margin-top: 0.7rem;
+      font-size: 14px;
+      font-family: Manrope;
+      color: $place_holder;
+    }
+  }
+  .input_container1 {
+    margin-top: -0.5rem;
+  }
+  .input_container2 {
+    margin-top: 0.5rem;
+  }
+  .btn {
+    margin-top: 1.2rem;
+  }
+  .terms {
+    font-family: Manrope;
+    text-align: center;
+    padding: 0.7rem 1.8rem;
+    h4 {
+      margin: 0rem auto;
+      a {
+        color: $black;
+        font-size: 14px;
+      }
+    }
+    p {
+      font-size: 13.5px;
+      color: $place_holder;
+      margin-top: 0.6rem;
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+}

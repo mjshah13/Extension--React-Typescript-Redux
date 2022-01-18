@@ -1,0 +1,53 @@
+@import '../../../index.scss';
+.heading_container {
+  width: 20rem;
+  display: flex;
+  margin: auto;
+
+  h3 {
+    font-size: 14px;
+    font-family: Manrope-ExtraLight;
+    margin-bottom: 0.5rem;
+    color: $input_label;
+  }
+  img {
+    margin-left: 0.4rem;
+    position: relative;
+    top: -4px;
+  }
+}
+.input_container {
+  width: 20rem;
+  display: flex;
+  margin: auto;
+  input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-family: Manrope;
+    background-color: $input_bg;
+    border: 2px solid $input_border_inactive;
+    padding: 12px 16px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  span {
+    font-size: 16px;
+    font-family: Manrope;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border: 2px solid $input_border_inactive;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left: none;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Manrope-SemiBold;
+  }
+  ::placeholder {
+    font-family: Manrope;
+    font-weight: 400;
+  }
+}

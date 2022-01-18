@@ -1,19 +1,18 @@
-import { BrowserRouter as Navigate, Route, RouteProps } from "react-router-dom";
+import { Route, Navigate } from "react-router-dom";
 
-export type ProtectedRouteProps = {
-  isAuthenticated: boolean;
-  authenticationPath: string;
-} & RouteProps;
+const PrivateRoute = ({ element: Component, ...rest }: any) => {
+  return (
+    <Route
+      {...rest}
+      render={(props: any) =>
+        sessionStorage.getItem("accessToken") ? (
+          <Component {...props} />
+        ) : (
+          <Navigate to="/login" />
+        )
+      }
+    />
+  );
+};
 
-function ProtectedRoute({
-  isAuthenticated,
-  authenticationPath,
-  ...routeProps
-}: ProtectedRouteProps) {
-  if (isAuthenticated) {
-    return <Route {...routeProps} />;
-  } else {
-    return console.log("Directed");
-  }
-}
-export default ProtectedRoute;
+export default PrivateRoute;

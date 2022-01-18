@@ -1,0 +1,27 @@
+@import '../../../index';
+.btn_container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  button {
+    // background-color: $purple;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    span {
+      color: $white;
+      font-family: Manrope;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    img {
+      align-items: center;
+      width: 7px;
+    }
+  }
+}
